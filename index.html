@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <style>
+      body {
+         background-color: rgb(0,0, 0);
+      }
+      html, body {
+        height: 100%; /* 使html和body占满全屏 */
+        margin: 0; /* 去掉默认边距 */
+      }
+      canvas {
+        display: block; /* 去掉canvas周围的空白 */
+      }
+   </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>可塑性记忆艾拉</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+  </head>
+  <body class="template">
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <script type='text/javascript'>
+      var Module = {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null,
+        compatibilitycheck: null,
+        dataUrl: "Release/webgl.data",
+        codeUrl: "Release/webgl.js",
+        memUrl: "Release/webgl.mem",
+      };
+
+      function resizeCanvas() {
+        const canvas = document.getElementById('canvas');
+        const maxWidth = 1920;
+        const maxHeight = 1080;
+        const width = Math.min(window.innerWidth, maxWidth);
+        const height = Math.min(window.innerHeight, maxHeight);
+        
+        canvas.width = width;
+        canvas.height = height;
+      }
+
+      window.addEventListener('resize', resizeCanvas);
+      window.addEventListener('load', resizeCanvas);
+    </script>
+    <script src="Release/UnityLoader.js"></script>
+  </body>
+</html>
