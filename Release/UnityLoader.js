@@ -102,8 +102,9 @@ function SetIndexedDBAndLoadCompressedJS(e) {
 }
 
 function CompatibilityCheck() {
-    hasWebGL ? mobile ? confirm("Please note that Unity WebGL is not currently supported on mobiles. Press Ok if you wish to continue anyway.") || window.history.back() : -1 == browser.indexOf("Firefox") && -1 == browser.indexOf("Chrome") && -1 == browser.indexOf("Safari") && (confirm("Please note that your browser is not currently supported for this Unity WebGL content. Try installing Firefox, or press Ok if you wish to continue anyway.") || window.history.back()) : (alert("You need a browser which supports WebGL to run this content. Try installing Firefox."), window.history.back())
+    hasWebGL ? mobile ? window.history.back() : -1 == browser.indexOf("Firefox") && -1 == browser.indexOf("Chrome") && -1 == browser.indexOf("Safari") && (confirm("Please note that your browser is not currently supported for this Unity WebGL content. Try installing Firefox, or press Ok if you wish to continue anyway.") || window.history.back()) : (alert("You need a browser which supports WebGL to run this content. Try installing Firefox."), window.history.back())
 }
+
 
 function SetFullscreen(e) {
     if ("undefined" == typeof JSEvents) return void console.log("Player not loaded yet.");

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ふれあいモード　リアクション＋セリフデータ -->
+<reaction>
+	<!-- 好感度　良い -->
+	<like type="good">
+		<hit name="hit_head">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o23嗯？ 什么？………@m1@d6…哎，@o22你在干嘛～？" tlen="19" vfrm="282" voice="pmah_002"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m47@d7我想让你多抚摸我…" tlen="11" vfrm="110" voice="pmah_005"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_body">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o6那里，其实，@m6没有开关之类的东西，@o3所以…" tlen="21" vfrm="316" voice="pmab_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="“这个是按摩吗？@s40@r@m10@d50是的@s80…。@s240@m1@d27那么@r，@s250@m22@d9下次我来给你按摩吧！" tlen="29" vfrm="454" voice="pmab_005"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_arm_r">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o21 诶？有什么想要咨询的事情吗？我希望你能@o25跟我聊聊哦，什么都可以哦~" tlen="22" vfrm="292" voice="pmar_002"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m20 其实呢，@m57我想和@d7你牵手呢~" tlen="11" vfrm="249" voice="pmar_006"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_arm_l">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m1 你不用担心哦，@d43我会在这里陪着你的，@m2一直都在@d40哦~" tlen="14" vfrm="175" voice="pmal_003"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m1@d40谢谢你哦。@m2@d54总是陪在我身边，真的很开心呢~" tlen="18" vfrm="202" voice="pmal_006"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_legs">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m6@d27厕所吗？@m9@d25现在的话，其实还好啦~" tlen="16" vfrm="293" voice="pmat_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m30@d54好痒哦…。@m4@d55好痒呢。@m9@d17嘿？" tlen="20" vfrm="354" voice="pmat_005"/>
+			</touch>
+		</hit>
+	</like>
+
+	<!-- 好感度　普通 -->
+	<like type="normal">
+		<hit name="hit_head">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m1难道说@d43，觉得无聊吗？@m2@d59嘿嘿，真像个小孩子呢。" tlen="18" vfrm="313" voice="pmbh_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@o23嘿嘿，@o7嗯，精神好多了！" tlen="12" vfrm="168" voice="pmbh_005"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_body">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m3@d33真是的，@m9@d3我希望你不要再捉弄我了。@o14哼！" tlen="20" vfrm="255" voice="pmbb_003"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@o18像艾露那样，@m20身材好一点会更好@m9@d18？…真的嘛？@m2@d36是这样啊。" tlen="29" vfrm="543" voice="pmbb_005"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_arm_r">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o23如果你太过纠缠的话，@o17@d12我也会开始捉弄你的哦。" tlen="24" vfrm="219" voice="pmbr_002"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@o21力气吗？@o24怎么样呢，@o15嗯～，嗯嗯嗯～！@o1唔，完全不行…" tlen="27" vfrm="697" voice="pmbr_004"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_arm_l">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o9你在干嘛？@o21@d64只是叫我而已吗？@m9@d18真是的。" tlen="21" vfrm="338" voice="pmbl_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m10这样在一起@d36就感觉我们真的是恋人呢。@m2@d16嘿嘿。" tlen="22" vfrm="312" voice="pmbl_005"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_legs">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m11我穿着裤子哦，@d30所以没问题。" tlen="11" vfrm="120" voice="pmbt_002"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m5@d27充电的话，@m6@d25还好，没问题的…" tlen="15" vfrm="264" voice="pmbt_004"/>
+			</touch>
+		</hit>
+	</like>
+
+	<!-- 好感度　悪い -->
+	<like type="bad">
+		<hit name="hit_head">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m7@d13哎呀。@o18刚才的，@o19有点用力哦…" tlen="12" vfrm="239" voice="pmch_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m54感觉…@m24@d25虽然是恋人，反而像是被当作@m9@d7小孩子一样被对待呢。" tlen="24" vfrm="358" voice="pmch_004"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_body">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o18你根本就不懂女孩子的心情嘛，@o20一点都不知道呢。" tlen="25" vfrm="303" voice="pmcb_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m1@d11这种事，@m39@d24美智留也常常对扎克做呢。" tlen="22" vfrm="216" voice="pmcb_004"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_arm_r">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@o21茶没了？@o23我也想偶尔让你给我泡一下呢。" tlen="28" vfrm="286" voice="pmcr_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m6@d21如果你一直这样蹭我，我会有点困扰哦…" tlen="20" vfrm="254" voice="pmcr_003"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_arm_l">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m1虽然看起来是这样，但其实我还挺有力气的哦。@m65毕竟我是个Giftia嘛。" tlen="27" vfrm="292" voice="pmcl_001"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@m4@d40你看起来有点困呢。@o1不要勉强自己哦。" tlen="22" vfrm="249" voice="pmcl_003"/>
+			</touch>
+		</hit>
+
+		<hit name="hit_legs">
+			<!-- つつく -->
+			<touch type="touch">
+				<action text="@m44厕所我刚去过，所以@d56不用担心哦。@m9" tlen="24" vfrm="221" voice="pmct_002"/>
+
+			</touch>
+			<!-- 撫でる -->
+			<touch type="swipe">
+				<action text="@o28那个，刚才@m3@d41你的鼻息有点重呢，@m9@d7…你还好吗？" tlen="21" vfrm="318" voice="pmct_003"/>
+			</touch>
+		</hit>
+	</like>
+
+	<!-- 好感度　良い・普通 -->
+	<like type="special">
+		<!-- チャイナ服 -->
+		<hit name="an">
+			<touch type="common">
+				<action text="@m3@d17嘿！@m6@d8你好啊！@m21@d6来吧！@o25感觉自己好像变强了呢！" tlen="27" vfrm="335" voice="pmd_011"/>
+				<action text="@m9@d37嘿，这种衣服，@m4@d54你是在哪里买的呀？" tlen="18" vfrm="255" voice="pmd_012"/>
+			</touch>
+		</hit>
+	</like>
+
+	<!-- 好感度　共通 -->
+	<like type="common">
+		<hit name="arms">
+			<touch type="common">
+				<action text="@o16嗯嗯~" tlen="3" vfrm="64" voice="pme_001"/>
+				<action text="@o7嘿嘿~" tlen="3" vfrm="51" voice="pme_002"/>
+				<action text="@o6哇，吓到我了~" tlen="9" vfrm="142" voice="pme_003"/>
+				<action text="@o22手、想牵吗？" tlen="8" vfrm="116" voice="pme_004"/>
+				<action text="@o14真是的，不要再捉弄我了~" tlen="11" vfrm="158" voice="pme_005"/>
+				<action text="@o2嗯~" tlen="3" vfrm="32" voice="pme_006"/>
+				<action text="@m11@d6哇哦！" tlen="4" vfrm="69" voice="pme_007"/>
+				<action text="@m1@d36好的，@m2茶请用~" tlen="8" vfrm="105" voice="pme_008"/>
+				<action text="@o23嗯嗯~？" tlen="3" vfrm="38" voice="pme_009"/>
+				<action text="@m1@d60你怎么了呀？" tlen="6" vfrm="66" voice="pme_010"/>
+			</touch>
+		</hit>
+
+		<hit name="other">
+			<touch type="common">
+				<action text="@o16嗯嗯~" tlen="3" vfrm="64" voice="pme_001"/>
+				<action text="@o7嘿嘿~" tlen="3" vfrm="51" voice="pme_002"/>
+				<action text="@o6哇，吓到我了~" tlen="9" vfrm="142" voice="pme_003"/>
+				<action text="@o14手、想牵吗？" tlen="11" vfrm="158" voice="pme_005"/>
+				<action text="@o2嗯嗯！" tlen="3" vfrm="32" voice="pme_006"/>
+				<action text="@o23哼哼？" tlen="3" vfrm="38" voice="pme_009"/>
+				<action text="@m1@d60你怎么了呀？" tlen="6" vfrm="66" voice="pme_010"/>
+			</touch>
+		</hit>
+	</like>
+</reaction>
