@@ -1,52 +1,57 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 添加视口设置 -->
-    <title>可塑性记忆艾拉</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备判断</title>
     <style>
         body {
-            background-image: url('Release/Background.png');
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial, sans-serif; /* 设置字体 */
+            background-color: #f0f0f0; /* 背景颜色 */
+            color: #333; /* 字体颜色 */
+            display: flex; /* 使用flexbox居中内容 */
+            flex-direction: column; /* 垂直排列 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+            height: 100vh; /* 视口高度 */
+            margin: 0; /* 去掉默认边距 */
         }
-        canvas {
-            width: 100%;
-            height: calc(100% - 200px);
-            max-width: 1000px;
-            max-height: calc(100vh - 200px);
-            margin: 100px 0;
+        h1 {
+            font-size: 2.5em; /* 标题字体大小 */
+            margin-bottom: 20px; /* 标题下边距 */
+        }
+        p {
+            font-size: 1.2em; /* 段落字体大小 */
+            text-align: center; /* 段落居中 */
+            max-width: 600px; /* 最大宽度 */
         }
     </style>
-</head>
-<body class="template">
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-    <script type='text/javascript' defer>
-        var Module = {
-            TOTAL_MEMORY: 268435456,
-            dataUrl: "Release/webgl.data",
-            codeUrl: "Release/webgl.js",
-            memUrl: "Release/webgl.mem",
-        };
+    <script>
+        function redirectBasedOnDevice() {
+            // 检测用户代理字符串
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-        function resizeCanvas() {
-            const canvas = document.getElementById('canvas');
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight - 200;
+            // 移动设备正则表达式
+            var isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+
+            // 设置跳转延迟
+            setTimeout(function() {
+                if (isMobile) {
+                    // 如果是移动设备，跳转到移动端页面
+                    window.location.href = "index_mobile.html"; // 替换为你的移动端网址
+                } else {
+                    // 如果是PC端，跳转到PC端页面
+                    window.location.href = "index_pc.html"; // 替换为你的PC端网址
+                }
+            }, 2000); // 延迟2000毫秒（2秒）
         }
 
-        window.addEventListener('resize', resizeCanvas);
-        window.addEventListener('load', resizeCanvas);
+        // 页面加载时执行重定向
+        window.onload = redirectBasedOnDevice;
     </script>
-    <script src="Release/UnityLoader.js" defer></script>
+</head>
+<body>
+    <h1>正在检测设备...</h1>
+    <p>请稍等，我们将把您重定向到适合您的设备的网站。</p>
 </body>
 </html>
